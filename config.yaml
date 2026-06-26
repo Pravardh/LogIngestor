@@ -1,0 +1,23 @@
+agent:
+  scan_interval: 10       
+  host: "127.0.0.1"
+  port: 1134
+  max_lines_per_scan: 20 
+
+log_sources:
+  files:
+    - /var/log/syslog
+    - /var/log/auth.log
+    - /var/log/kern.log
+    - /var/log/dpkg.log
+    - /var/log/ufw.log
+
+  journalctl:
+    enabled: true
+    units:
+      - ssh
+      - cron
+      - NetworkManager
+      - systemd-logind
+    priority: "warning" 
+    lines_per_unit: 50
