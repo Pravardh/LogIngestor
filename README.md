@@ -1,4 +1,4 @@
-# Encrypted Log Shipping Agent with AI-Powered Analysis
+# Log Shipping Agent with AI Analysis
 
 A lightweight Python based log collection tool that tails Linux log files, enriches them with detection logic, encrypts them at rest, and uses DeepSeek's API to generate analyst-ready summaries of critical events.
 
